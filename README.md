@@ -4,5 +4,5 @@
 
 ### Link to our website
 
-- New link https://ginow.github.io/schoolspecialists/
+- New link https://tattipodapatti.github.io/schoolspecialists/
 - Old link ~~https://school-specialists.surge.sh/~~
