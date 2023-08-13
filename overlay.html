@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            /* 1:1 Aspect Ratio */
+            width: 430px;
+            height: 1020px;
+            background-color: black;
+            border: white;
+            border-width: 5px;
+            border-style: solid;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .SchoolMap {
+            width: 300px;
+            height: 100%;
+        }
+
+        .block {
+            margin-top: 20px;
+            /* padding-top: 4px; */
+            position: relative;
+            display: inline-block;
+            background: linear-gradient(0deg, #000, #272727);
+        }
+
+        .block:before,
+        .block:after {
+            content: '';
+            position: absolute;
+
+            left: -2px;
+            top: -2px;
+            background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
+                    #0000ff, #00ff00, #ffff00, #ff0000);
+            background-size: 400%;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            z-index: -1;
+            animation: steam 20s linear infinite;
+        }
+
+        @keyframes steam {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        .block:after {
+            filter: blur(50px);
+        }
+
+        a {
+            color: aqua;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0
+        }
+
+        .OurSquad {
+            color: aquamarine
+        }
+
+        h3 {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-size: cover;
+            background-image: linear-gradient(147deg,
+                    rgb(175, 15, 249) 0%,
+                    rgba(245, 67, 119, 1) 26%,
+                    rgba(252, 28, 28, 1) 50%);
+
+        }
+
+        .tattiGreenLogo,
+        .worstRedLogo {
+            width: 25%;
+        }
+
+        .h4 {}
+    </style>
+</head>
+
+<body>
+    <div class="block"><img class="SchoolMap" src="images/SchoolMap.jpeg" alt="School Map"></div>
+
+    <h3>
+        Apartment Special Forces
+    </h3>
+    <h4>
+        a.k.a.
+    </h4>
+    <h3>
+        School Specialists
+    </h3>
+    <h4>
+        a.k.a.
+    </h4>
+    <h3>
+        TattiPodaPatti
+    </h3>
+    <span class="OurSquad">
+        Our Squad:
+    </span>
+    <ul>
+        <li>SAYHITOYOURDAD</li>
+        <li>LooteraSpecial</li>
+        <li>SamarAdhari</li>
+        <li>Worstfellow</li>
+        <li>Tatti¥Appa</li>
+        <li>Tattiayya</li>
+        <li>Akshay</li>
+        <li>Asur</li>
+    </ul>
+    <a href="https://ginow.github.io/schoolspecialists/">https://ginow.github.io/schoolspecialists/</a>
+    <img class="tattiGreenLogo" src="images/tattiGreenLogo.png" alt="tattiGreenLogo">
+    <img class="worstRedLogo" src="images/worstRedLogo.png" alt="worstRedLogo">
+</body>
+
+</html>
